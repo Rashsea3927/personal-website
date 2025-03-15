@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, Noto_Sans_JP } from 'next/font/google';
+import { Noto_Sans_JP, Outfit } from 'next/font/google';
 import './globals.css';
 
 const notoSansJP = Noto_Sans_JP({
@@ -7,8 +7,8 @@ const notoSansJP = Noto_Sans_JP({
   subsets: ['latin'],
 });
 
-const inter = Inter({
-  variable: '--font-inter',
+const outfit = Outfit({
+  variable: '--font-outfit',
   subsets: ['latin'],
 });
 
@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang='ja'>
       <body
-        className={`${notoSansJP.variable} ${inter.variable} text-primary antialiased bg-slate-950`}
+        className={`${notoSansJP.variable} ${outfit.variable} text-primary antialiased bg-[#15172a]`}
       >
         {children}
       </body>

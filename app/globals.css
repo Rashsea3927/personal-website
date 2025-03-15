@@ -2,7 +2,7 @@
 
 @theme inline {
   --font-notosans: var(--font-noto-sans-jp);
-  --font-inter: var(--font-inter);
+  --font-outfit: var(--font-outfit);
 }
 
 @theme {
