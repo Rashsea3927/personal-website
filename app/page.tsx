@@ -1,35 +1,37 @@
-import { FaGithub } from 'react-icons/fa';
-
 export default function Home() {
   return (
-    <div className='grid lg:grid-cols-[0.4fr_1fr] lg:justify-between'>
-      <header className='max-h-screen sticky top-0 px-9 py-24 grid gap-28 font-outfit text-center'>
-        <h1 className='text-4xl font-bold text-[#f05d23]'>Kaji.dev</h1>
-        <nav>
-          <ul className='flex flex-col gap-12'>
-            <li className='font-bold text-base tracking-widest'>Home</li>
-            <li className='font-bold text-base tracking-widest'>About</li>
-            <li className='font-bold text-base tracking-widest'>Experience</li>
-            <li className='font-bold text-base tracking-widest'>Projects</li>
-          </ul>
-        </nav>
-        <div>
-          <FaGithub className='w-6 h-6' />
+    <main className='h-[3000px] px-12 bg-slate-900'>
+      <section id='about' className='min-h-screen flex items-center justify-center'>
+        <div className='max-w-4xl w-full'>
+          <h2 className='text-5xl font-bold mb-3'>Hi, I&apos;m Kaji.</h2>
+          <p className='text-lg text-slate-400 tracking-wider font-bold mb-8'>Front-end Engineer</p>
+          <p className='text-lg leading-8 mb-14'>
+            佐賀県出身、東京在住のフロントエンドエンジニアです。
+            <br />
+            求職者訓練校で HTML・CSS・JavaScript を用いたコーディングや Web デザインについて学び、特にコーディングに興味を持ちました。
+            <br />
+            現在はリユース業の会社でPHPのテンプレートエンジンであるSmartyを用いてWebサイトの制作を行なっております。
+            <br />
+            独学でNext.jsなどのモダンな技術をキャッチアップし、スキルを磨いています。
+            <br />
+            将来的にはフルスタックエンジニアとして、より幅広い領域で開発に関わることを目指しています。
+          </p>
+          <p className='text-lg font-semibold'>Tech Stack： HTML ｜ CSS ｜ Sass ｜ JavaScript ｜ jQuery ｜ React ｜ Next.js ｜ TypeScript</p>
         </div>
-      </header>
-      <main className='h-[3000px] px-12 bg-slate-900'>
-        <section className='min-h-screen flex items-center justify-center'>
-          <div className='max-w-4xl w-full'>
-            <h2 className='text-5xl font-bold mb-8'>Hi, I&apos;m Kaji.</h2>
-            <p className='text-lg mb-16'>
-              東京でフロントエンドエンジニアとして活動しています。
-              <br />
-              モダンな技術に興味があり、日々新しい知識を取り入れながら開発に取り組んでいます。
-            </p>
-            <p className='text-lg font-semibold'>Tech Stack： HTML ｜ CSS ｜ Sass ｜ JavaScript ｜ React ｜ Next.js ｜ TypeScript</p>
-          </div>
-        </section>
-      </main>
-    </div>
+      </section>
+      <section id='projects' className='min-h-screen flex items-center justify-center'>
+        <div className='max-w-4xl w-full'>
+          <h2 className='text-5xl font-bold mb-12'>Projects</h2>
+          <ul className='grid grid-cols-3 gap-8'>
+            <li className='h-72 bg-amber-200'></li>
+            <li className='h-72 bg-amber-200'></li>
+            <li className='h-72 bg-amber-200'></li>
+            <li className='h-72 bg-amber-200'></li>
+            <li className='h-72 bg-amber-200'></li>
+            <li className='h-72 bg-amber-200'></li>
+          </ul>
+        </div>
+      </section>
+    </main>
   );
 }

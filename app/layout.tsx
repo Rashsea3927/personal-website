@@ -1,3 +1,4 @@
+import Header from '@/components/Header';
 import type { Metadata } from 'next';
 import { Noto_Sans_JP, Outfit } from 'next/font/google';
 import './globals.css';
@@ -24,10 +25,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ja'>
-      <body
-        className={`${notoSansJP.variable} ${outfit.variable} text-primary antialiased bg-[#15172a]`}
-      >
-        {children}
+      <body className={`${notoSansJP.variable} ${outfit.variable} text-primary antialiased bg-[#15172a]`}>
+        <div className='grid lg:grid-cols-[0.4fr_1fr] lg:justify-between'>
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   );
